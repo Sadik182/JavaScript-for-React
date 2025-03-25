@@ -26,3 +26,12 @@ let students = {
 
 const [sub1, sub2, sub3] = students.subjects;
 console.log(sub3);
+
+
+// Object Destructuring 
+
+const {name, age} = {name: 'Sadik', age: 28}
+const {email} = {name: 'Sadik', age: 28, email: 'sadik@gmail.com', phone: '01491790000'};
+
+console.log("From Object Destructuring = ",name);
+console.log("From Object Destructuring = ",email);
