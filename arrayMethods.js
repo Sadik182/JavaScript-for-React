@@ -29,3 +29,11 @@ console.log(brands);
 
 const specificName = products.filter((product) => product.name.includes("P"));
 console.log("Names with latter p",specificName);
+
+
+// 4. Find
+
+const lowPrice = products.find((product) => product.price < 2000);
+
+console.log("Log for Find", lowPrice);
+
