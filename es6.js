@@ -33,6 +33,14 @@ const { profile: { email, address: { city, country } = {} } = {} } = data;
 console.log("City is ", city);
 console.log("Country is ", country);
 console.log("Email is ", email);
+
+// Array Destructuring
+const arry = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const [, second, , , fifth, ...rest] = arry;
+
+console.log("Destructured Arry with comma = ", second, fifth, rest);
+
 //  1. Tamplate String
 const aboutMe = `My name is ${students.studentName} age of ${students.age} My favourit subject is ${students.subjects[0]} the number I liked most is ${numbers[2]}`;
 //console.log(aboutMe);
@@ -65,3 +73,14 @@ numbers.push(10);
 numbers.push(2);
 
 //console.log(newNumbers);
+
+// Array Reduce Method
+
+function sum(...numbers) {
+  return numbers.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    10
+  );
+}
+
+console.log("Sum of provlided numbers = ", sum(1, 2, 3, 4, 5));
