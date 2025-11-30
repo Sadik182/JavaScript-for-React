@@ -10,3 +10,13 @@ function debounce(func, delay) {
     }, delay);
   };
 }
+
+// Usage of debounce
+const search = debounce((query) => {
+  console.log("Searching for query using debounce", query);
+}, 300);
+
+search("j");
+search("ja");
+search("jav");
+search("javaScript in debounce");
